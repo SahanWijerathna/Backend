@@ -1,15 +1,15 @@
-package com.resqdrive.backend.controller;
+package com.example.resqdrive.controller;
 
-import com.resqdrive.backend.config.JwtFilter.CustomPrincipal;
-import com.resqdrive.backend.dto.RequestCreateDto;
-import com.resqdrive.backend.dto.RequestResponseDto;
-import com.resqdrive.backend.dto.RequestUpdateDto;
-import com.resqdrive.backend.model.Notification;
-import com.resqdrive.backend.model.RequestEntity;
-import com.resqdrive.backend.model.User;
-import com.resqdrive.backend.repository.NotificationRepository;
-import com.resqdrive.backend.repository.RequestRepository;
-import com.resqdrive.backend.repository.UserRepository;
+import com.example.resqdrive.config.JwtFilter.CustomPrincipal;
+import com.example.resqdrive.dto.RequestCreateDto;
+import com.example.resqdrive.dto.RequestResponseDto;
+import com.example.resqdrive.dto.RequestUpdateDto;
+import com.example.resqdrive.model.Notification;
+import com.example.resqdrive.model.RequestEntity;
+import com.example.resqdrive.model.User;
+import com.example.resqdrive.repository.NotificationRepository;
+import com.example.resqdrive.repository.RequestRepository;
+import com.example.resqdrive.repository.UserRepository;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
