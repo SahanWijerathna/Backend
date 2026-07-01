@@ -1,4 +1,4 @@
-package com.resqdrive.backend.config;
+package com.example.resqdrive.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

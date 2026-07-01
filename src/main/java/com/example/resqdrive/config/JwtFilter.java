@@ -1,4 +1,4 @@
-package com.resqdrive.backend.config;
+package com.example.resqdrive.config;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

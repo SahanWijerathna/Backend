@@ -1,4 +1,4 @@
-package com.resqdrive.backend.config;
+package com.example.resqdrive.config;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
