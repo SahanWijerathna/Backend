@@ -26,7 +26,7 @@ We use Docker Compose to run a MySQL database instance. This saves us from havin
    ```bash
    docker compose up -d
    ```
-   *Note: This spins up a MySQL container on port `3306` with the database name `resqdrive`, username `root`, and password `rootpassword`.*
+   *Note: This spins up a MySQL container on port `3307` with the database name `resqdrive`, username `root`, and password `rootpassword`.*
 
 ### 2. Package & Import Guidelines (⚠️ CRITICAL FOR THE TEAM)
 Since we are collaborating on this project, we must ensure all package declarations are consistent. 
