@@ -1,6 +1,6 @@
-package com.resqdrive.backend.repository;
+package com.example.resqdrive.repository;
 
-import com.resqdrive.backend.model.RequestEntity;
+import com.example.resqdrive.model.RequestEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Query;
