@@ -1,9 +1,9 @@
-package com.resqdrive.backend.dto;
+package com.example.resqdrive.dto;
 
-import com.resqdrive.backend.model.User;
-import com.resqdrive.backend.model.Vehicle;
-import com.resqdrive.backend.model.ServiceEntity;
-import com.resqdrive.backend.model.Technician;
+import com.example.resqdrive.model.User;
+import com.example.resqdrive.model.Vehicle;
+import com.example.resqdrive.model.ServiceEntity;
+import com.example.resqdrive.model.Technician;
 import java.util.List;
 
 public class UserResponseDto {
