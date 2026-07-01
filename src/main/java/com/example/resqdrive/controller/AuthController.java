@@ -1,12 +1,12 @@
-package com.resqdrive.backend.controller;
+package com.example.resqdrive.controller;
 
-import com.resqdrive.backend.config.JwtFilter.CustomPrincipal;
-import com.resqdrive.backend.config.JwtUtil;
-import com.resqdrive.backend.dto.LoginRequest;
-import com.resqdrive.backend.dto.RegisterRequest;
-import com.resqdrive.backend.dto.UserResponseDto;
-import com.resqdrive.backend.model.*;
-import com.resqdrive.backend.repository.*;
+import com.example.resqdrive.config.JwtFilter.CustomPrincipal;
+import com.example.resqdrive.config.JwtUtil;
+import com.example.resqdrive.dto.LoginRequest;
+import com.example.resqdrive.dto.RegisterRequest;
+import com.example.resqdrive.dto.UserResponseDto;
+import com.example.resqdrive.model.*;
+import com.example.resqdrive.repository.*;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;

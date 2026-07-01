@@ -1,6 +1,6 @@
-package com.resqdrive.backend.dto;
+package com.example.resqdrive.dto;
 
-import com.resqdrive.backend.model.RequestEntity;
+import com.example.resqdrive.model.RequestEntity;
 
 public class RequestResponseDto {
 

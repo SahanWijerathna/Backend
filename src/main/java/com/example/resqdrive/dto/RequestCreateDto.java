@@ -1,4 +1,4 @@
-package com.resqdrive.backend.dto;
+package com.example.resqdrive.dto;
 
 public class RequestCreateDto {
 

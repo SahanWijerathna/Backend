@@ -1,6 +1,6 @@
-package com.resqdrive.backend.repository;
+package com.example.resqdrive.repository;
 
-import com.resqdrive.backend.model.ServiceEntity;
+import com.example.resqdrive.model.ServiceEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import java.util.List;
