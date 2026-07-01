@@ -1,10 +1,10 @@
-package com.resqdrive.backend.controller;
+package com.example.resqdrive.controller;
 
-import com.resqdrive.backend.config.JwtFilter.CustomPrincipal;
-import com.resqdrive.backend.model.RequestEntity;
-import com.resqdrive.backend.model.Transaction;
-import com.resqdrive.backend.repository.RequestRepository;
-import com.resqdrive.backend.repository.TransactionRepository;
+import com.example.resqdrive.config.JwtFilter.CustomPrincipal;
+import com.example.resqdrive.model.RequestEntity;
+import com.example.resqdrive.model.Transaction;
+import com.example.resqdrive.repository.RequestRepository;
+import com.example.resqdrive.repository.TransactionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
