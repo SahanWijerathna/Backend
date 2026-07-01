@@ -1,4 +1,4 @@
-package com.resqdrive.backend.model;
+package com.example.resqdrive.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;

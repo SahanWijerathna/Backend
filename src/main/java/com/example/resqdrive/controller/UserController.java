@@ -1,9 +1,9 @@
-package com.resqdrive.backend.controller;
+package com.example.resqdrive.controller;
 
-import com.resqdrive.backend.config.JwtFilter.CustomPrincipal;
-import com.resqdrive.backend.dto.UserResponseDto;
-import com.resqdrive.backend.model.User;
-import com.resqdrive.backend.repository.UserRepository;
+import com.example.resqdrive.config.JwtFilter.CustomPrincipal;
+import com.example.resqdrive.dto.UserResponseDto;
+import com.example.resqdrive.model.User;
+import com.example.resqdrive.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

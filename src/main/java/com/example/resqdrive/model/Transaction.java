@@ -1,4 +1,4 @@
-package com.resqdrive.backend.model;
+package com.example.resqdrive.model;
 
 import jakarta.persistence.*;
 import java.time.Instant;
