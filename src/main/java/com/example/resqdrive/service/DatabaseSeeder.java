@@ -7,8 +7,6 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
-import java.time.Instant;
-import java.util.Arrays;
 
 @Component
 public class DatabaseSeeder implements ApplicationRunner {
@@ -33,6 +31,11 @@ public class DatabaseSeeder implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
+        if (requestRepository.existsById("req-default")) {
+            requestRepository.deleteById("req-default");
+            System.out.println("Cleaned up old default request (req-default) from database.");
+        }
+
         if (userRepository.count() == 0) {
             System.out.println("Seeding database with default test accounts...");
 
@@ -158,33 +161,6 @@ public class DatabaseSeeder implements ApplicationRunner {
             t2.setPhone("+1 (555) 018-9902");
             t2.setStatus("available");
             technicianRepository.save(t2);
-
-            // 5. Create Request
-            RequestEntity req = new RequestEntity();
-            req.setId("req-default");
-            req.setUserId(user1.getId());
-            req.setUserName(user1.getName());
-            req.setUserPhone(user1.getPhone());
-            req.setVehicleMake("Tesla");
-            req.setVehicleModel("Model S");
-            req.setVehicleYear("2022");
-            req.setVehiclePlate("E-DRIVE1");
-            req.setVehicleInsurance("State Farm - SF-982312");
-            req.setCategory("Mechanical");
-            req.setSymptoms("Engine overheating simulator, check engine light blinking.");
-            req.setDescription("Loud grinding sound from front axle when turning left.");
-            req.setLocation("145 9th St, San Francisco, CA 94103");
-            req.setGpsLat(37.7765);
-            req.setGpsLng(-122.4172);
-            req.setImageSimulated(true);
-            req.setAudioSimulated(false);
-            req.setStatus("pending");
-            req.setPaymentStatus("unpaid");
-            req.setIsTowingRequest(false);
-            req.setEta("Searching for helpers...");
-            req.setCreatedAt(Instant.now().toString());
-            req.setUpdatedAt(Instant.now().toString());
-            requestRepository.save(req);
 
             System.out.println("Database seeding completed successfully!");
         }
