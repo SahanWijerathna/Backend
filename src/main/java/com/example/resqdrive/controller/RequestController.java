@@ -197,6 +197,15 @@ public class RequestController {
                 }
             }
         }
+        // Reset cost on Cancel
+        if ("cancelled".equalsIgnoreCase(status) || 
+            ("completed".equalsIgnoreCase(status) && "Cancelled".equalsIgnoreCase(defaultEta))) {
+            request.setFee("$0.00");
+            request.setDispatchCost(0.0);
+            request.setPlatformCommission(0.0);
+            request.setProviderShare(0.0);
+            request.setDistance(0.0);
+        }
 
         requestRepository.save(request);
 
